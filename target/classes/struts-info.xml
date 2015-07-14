@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Struts2配置文件的DTD信息 --> 
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- Struts2配置文件的根元素 -->
+<struts>
+    <package name="info" namespace="/" extends="struts-default">
+        
+        <action name="catchinfo" class="com.action.CatchInfoAction">
+     		<result name="storeSuccess">/user/userlist.jsp</result>
+     		<result name="startCatch">/info/catchinfo.jsp</result>
+     	</action>
+    </package>
+</struts>
